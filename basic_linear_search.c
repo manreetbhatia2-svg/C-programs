@@ -8,13 +8,13 @@ int main(){
   length = sizeof(arr)/sizeof(arr[0]);
   for(i=0; i<length; i++){
     if(arr[i] == value){
-      printf("index of %d is %d", value, i);
+      printf("index of %d is %d\n", value, i);
       value_present = 1; // the value entered by user is present in the array 
       break;
     }
   }
-  if (value_present == 0){
-    printf("-1");
+  if (!value_present){
+    printf("-1\n");
   }
   return 0;
 }
