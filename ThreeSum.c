@@ -8,7 +8,7 @@ int main(){
     for(int i=1; i<n; i++){
         flag = 0;
         temp = arr[i];
-        for (j=i-1; j>=0; j--){       // where is it better to place {
+        for (j=i-1; j>=0; j--){       
             if(temp<arr[j]){
                 arr[j+1] = arr[j];
                 flag = 1;
